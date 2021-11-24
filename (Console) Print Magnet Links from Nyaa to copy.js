@@ -1,11 +1,9 @@
-var tmp=""
+var tmp=[];
 
 jQuery('i.fa-magnet').each(function(){
-  
-  tmp += jQuery(this).parent('a').attr('href')
-  
-  tmp += "\n"
-  
+
+  tmp.push( jQuery(this).parent('a').attr('href') );
+
 })
 
-console.log(tmp)
+console.log(tmp.join('\n') + '\n')
